@@ -1,0 +1,25 @@
+@media screen and (max-width:580px) {
+    .table>thead{
+        display: none;
+    }
+    .tbody,
+    .tbody>tr {
+        display: block;
+        width: 100%;
+
+    }
+    .tbody>tr>th::before,
+    .tbody>tr>td::before{
+        content: attr();
+    }
+    .tbody>tr{
+        margin-bottom: 16px;
+    }
+    .tbody>tr>td {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    
+    
+}
